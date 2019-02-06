@@ -2,6 +2,7 @@ import {Answer} from './answer';
 
 export class Question {
 
+  private _id: string;
   private _title: string;
   private _anwsers: Answer[];
 
@@ -24,5 +25,13 @@ export class Question {
 
   set anwsers(value: Answer[]) {
     this._anwsers = value;
+  }
+
+  get id(): string {
+    return this._id;
+  }
+
+  set id(value: string) {
+    this._id = value;
   }
 }
