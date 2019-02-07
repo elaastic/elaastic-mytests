@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SuiModule} from 'ng2-semantic-ui';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LastTestComponent } from './last-test/last-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    LastTestComponent
   ],
   imports: [
     BrowserModule,
