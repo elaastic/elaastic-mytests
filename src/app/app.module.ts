@@ -9,6 +9,7 @@ import { ListTestComponent } from './list-test/list-test.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastTestComponent } from './last-test/last-test.component';
 import { LineAnswerComponent } from './line-answer/line-answer.component';
+import { CardResultComponent } from './card-result/card-result.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LineAnswerComponent } from './line-answer/line-answer.component';
     ListTestComponent,
     SidebarComponent,
     LastTestComponent,
-    LineAnswerComponent
+    LineAnswerComponent,
+    CardResultComponent
   ],
   imports: [
     BrowserModule,
