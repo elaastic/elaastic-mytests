@@ -12,6 +12,12 @@
             "element",
             "app",
             "kebab-case"
+        ],
+        "no-unused-variable": [
+            true,
+            {
+                "ignore-pattern": "^_"
+            }
         ]
     }
 }
