@@ -10,6 +10,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastTestComponent } from './last-test/last-test.component';
 import { LineAnswerComponent } from './line-answer/line-answer.component';
 import { CardResultComponent } from './card-result/card-result.component';
+import { CardTestComponent } from './card-test/card-test.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardResultComponent } from './card-result/card-result.component';
     SidebarComponent,
     LastTestComponent,
     LineAnswerComponent,
-    CardResultComponent
+    CardResultComponent,
+    CardTestComponent
   ],
   imports: [
     BrowserModule,
