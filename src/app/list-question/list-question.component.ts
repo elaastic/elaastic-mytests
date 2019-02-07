@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {TEST1} from '../mock-jeu-test';
+import {STUD1, TEST1} from '../mock-jeu-test';
 import {Test} from '../test';
+import {Student} from '../student';
 
 @Component({
   selector: 'app-list-question',
@@ -9,11 +10,13 @@ import {Test} from '../test';
 })
 export class ListQuestionComponent implements OnInit {
 
-  test: Test;
+  checkParent: boolean;
+  student: Student;
+
   constructor() { }
 
   ngOnInit() {
-    this.test = TEST1;
+    this.student = STUD1;
   }
 
 }

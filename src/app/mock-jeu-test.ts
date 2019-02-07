@@ -46,7 +46,7 @@ export const REPQ1T2: Answer [] = [
 ];
 
 export const QUESTT2: Question [] = [
-  new Question('Comment fonctionne la mairie ?',
+  new Question(4, 'Comment fonctionne la mairie ?',
     REPQ1T2)
 ];
 
