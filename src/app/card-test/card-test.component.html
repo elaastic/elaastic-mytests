@@ -1,21 +1,22 @@
-<div class="ui accordion segment cadre">
-  <div class="ui title header active">
-    <strong>Question</strong>
+<div class="ui segment">
+    <div class="ui accordion segment cadre">
+    <div class="ui title header">
+      <strong>Question</strong>
+    </div>
+
+    <div class="ui basic padded large text segment content active">
+      <p>{{question.title}}</p>
+    </div>
 
   </div>
 
-  <div class="ui basic padded large text segment content active">
-    <p>{{question.title}}</p>
+  <div class="ui form">
+    <div class="field">
+      <label for="textarea">La réponse de @{{student.pseudo}}</label>
+      <textarea id="textarea"></textarea>
+    </div>
+    <div class="centrerButton">
+      <button class="ui button" type="submit">Valider</button>
+    </div>
   </div>
-
 </div>
-
-<form class="ui form">
-  <div class="field">
-    <label>La réponse de @{{student.pseudo}}</label>
-    <textarea></textarea>
-  </div>
-  <div class="centrerButton">
-    <button class="ui button" type="submit">Valider</button>
-  </div>
-</form>
