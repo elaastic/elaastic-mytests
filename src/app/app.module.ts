@@ -11,6 +11,7 @@ import { LastTestComponent } from './last-test/last-test.component';
 import { LineAnswerComponent } from './line-answer/line-answer.component';
 import { CardResultComponent } from './card-result/card-result.component';
 import { CardTestComponent } from './card-test/card-test.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardTestComponent } from './card-test/card-test.component';
     LastTestComponent,
     LineAnswerComponent,
     CardResultComponent,
-    CardTestComponent
+    CardTestComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
