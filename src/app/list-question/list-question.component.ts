@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TEST1} from '../mock-jeu-test';
+import {Test} from '../test';
 
 @Component({
   selector: 'app-list-question',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListQuestionComponent implements OnInit {
 
+  test: Test;
   constructor() { }
 
   ngOnInit() {
+    this.test = TEST1;
   }
 
 }

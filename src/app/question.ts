@@ -6,7 +6,8 @@ export class Question {
   private _title: string;
   private _anwsers: Answer[];
 
-  constructor(title: string, answers: Answer[]) {
+  constructor(id: number, title: string, answers: Answer[]) {
+    this._id = id;
     this._title = title;
     this._anwsers = answers;
   }

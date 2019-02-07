@@ -1,32 +1,22 @@
 <div class="ui list">
 
   <div class="item">
-    <i class="angle icon" [class.down]="!list" [class.right]="list" (click)="list = !list"></i>
+    <i class="angle icon" [class.down]="list" [class.right]="!list" (click)="list = !list"></i>
     <div class="content">
       <div class="ui checkbox">
-        <input type="checkbox" name="example">
-        <label>Introduction IHM - Partie 1</label>
+        <input type="checkbox" name="questionCheckBox1" [checked]="checkParent">
+        <label>{{test.title}}</label>
       </div>
 
-      <div [suiCollapse]="list">
+      <div [suiCollapse]="!list">
         <div class="list">
 
-          <div class="item">
+          <div class="item" *ngFor="let question of test.questions">
             <i class="icon"></i>
             <div class="content">
               <div class="ui checkbox">
-                <input type="checkbox" name="example">
-                <label>Question 1</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <i class="icon"></i>
-            <div class="content">
-              <div class="ui checkbox">
-                <input type="checkbox" name="example">
-                <label>Question 2</label>
+                <input type="checkbox" name="{{question.id}}" (change)="checkParent = true">
+                <label>{{question.title}}</label>
               </div>
             </div>
           </div>
