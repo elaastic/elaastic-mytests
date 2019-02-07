@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {STUD1, TEST1} from '../mock-jeu-test';
-import {Test} from '../test';
 import {Student} from '../student';
 
 @Component({
@@ -10,13 +9,12 @@ import {Student} from '../student';
 })
 export class ListQuestionComponent implements OnInit {
 
-  checkParent: boolean;
-  student: Student;
+  listTest: Array;
 
   constructor() { }
 
   ngOnInit() {
-    this.student = STUD1;
+    this.listTest = STUD1.tests;
   }
 
 }

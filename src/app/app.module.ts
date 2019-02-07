@@ -9,6 +9,7 @@ import { ListTestComponent } from './list-test/list-test.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastTestComponent } from './last-test/last-test.component';
 import { ListQuestionComponent } from './list-question/list-question.component';
+import { QuestionChoiceComponent } from './question-choice/question-choice.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListQuestionComponent } from './list-question/list-question.component';
     ListTestComponent,
     SidebarComponent,
     LastTestComponent,
-    ListQuestionComponent
+    ListQuestionComponent,
+    QuestionChoiceComponent
   ],
   imports: [
     BrowserModule,
