@@ -1,0 +1,13 @@
+<div class="ui segment">
+  <sui-progress class="indicating" [value]="changingValue">Auto-Evaluation</sui-progress>
+</div>
+<div class="ui segment">
+  <div class="centerButton">
+    <button (click)="onClickEvaluate(0)" class="ui inverted secondary button">Raté</button>
+    <button (click)="onClickEvaluate(1)" class="ui inverted red button">Pas compris</button>
+    <button (click)="onClickEvaluate(2)" class="ui inverted orange button">Pas encore tout compris</button>
+    <button (click)="onClickEvaluate(3)" class="ui inverted yellow button">compris</button>
+    <button (click)="onClickEvaluate(4)" class="ui inverted olive button">bien compris</button>
+    <button (click)="onClickEvaluate(5)" class="ui inverted green button">Parfait</button>
+  </div>
+</div>
