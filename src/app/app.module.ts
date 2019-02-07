@@ -12,7 +12,6 @@ import { LineAnswerComponent } from './line-answer/line-answer.component';
 import { CardResultComponent } from './card-result/card-result.component';
 import { CardTestComponent } from './card-test/card-test.component';
 import { FooterComponent } from './footer/footer.component';
-import {PageHomeComponent} from "./page-home/page-home.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import {PageHomeComponent} from "./page-home/page-home.component";
     LineAnswerComponent,
     CardResultComponent,
     CardTestComponent,
-    PageHomeComponent,
     FooterComponent
   ],
   imports: [
