@@ -8,6 +8,7 @@ import { AutoEvaluateComponent } from './auto-evaluate/auto-evaluate.component';
 import { ListTestComponent } from './list-test/list-test.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastTestComponent } from './last-test/last-test.component';
+import { LineAnswerComponent } from './line-answer/line-answer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LastTestComponent } from './last-test/last-test.component';
     AutoEvaluateComponent,
     ListTestComponent,
     SidebarComponent,
-    LastTestComponent
+    LastTestComponent,
+    LineAnswerComponent
   ],
   imports: [
     BrowserModule,
