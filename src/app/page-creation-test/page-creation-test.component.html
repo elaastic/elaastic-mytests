@@ -1,35 +1,53 @@
 <app-sidebar></app-sidebar>
 
 <div style="margin-left: 90px;">
-  <div class="ui container">
-    <div class="ui hidden divider"></div>
+    <div class="ui container">
+        <div class="ui hidden divider"></div>
 
-    <!-- Corp de la page -->
-    <div class="ui container segment" >
+        <div class="ui container">
 
-      <form>
+            <div class="ui form" style="max-width: 800px; margin: auto;">
+                <h2 class="ui header">
+                    <i class="list icon"></i>
 
-        <h1 class="ui header">
-          <div class="content">
-            Formulaire de création d'un test
-          </div>
-          </h1>
+                    <div class="content">
+                        Informations sur le nouveau tests
+                    </div>
+                </h2>
 
-          <div class="ui hidden divider"></div>
 
-          <label for="label">Nom du test :</label>
-          <input id="label" >
+                <div class="ui segment">
 
-          <label>
-            First Name:
-            <input type="text" formControlName="firstName">
-          </label>
+                    <div class="required field">
+                        <label>
+                            Nom du test
+                        </label>
 
-          <button type="submit">Enregistrer</button>
+                        <div class="required field">
+                            <input class="ui input"
+                                   type="text"
+                                   id="testName"
+                                   name="testName"
+                                   placeholder="Nom du test">
+                        </div>
 
-      </form>
+                    </div>
 
+                    <p>TODO : change, le choix des questions</p>
+
+                    <div class="content">
+                        Vous avez 5 questions selectionnées.
+                    </div>
+
+                    <div class="ui hidden divider"></div>
+
+                    <button routerLink="/index" type="submit"
+                            class="ui primary button">
+                        Sauvegarder &raquo;
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </div>
 </div>
+
