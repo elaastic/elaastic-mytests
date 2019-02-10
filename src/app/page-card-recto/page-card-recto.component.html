@@ -1,4 +1,35 @@
-<h1 class="center">Question n°{{numQuest}}/{{nbQuestion}}</h1>
-<h2 class="center">Nom de la catégorie: {{testTitle}}</h2>
-<app-card-test [student]="student" [question]="question" ></app-card-test>
-<button class="ui right floated red button">Quitter le test</button>
+<div style="margin-left: 90px;">
+    <div class="ui container">
+        <div class="ui hidden divider"></div>
+
+        <div class="ui container">
+
+            <h1 class="ui header center">
+                Question n°{{numQuest}}/{{nbQuestion}}
+                <div class="sub header center">
+                    Nom de la catégorie: {{testTitle}}
+                </div>
+            </h1>
+            <div class="ui hidden divider"></div>
+
+            <app-card-test [student]="student" [question]="question" ></app-card-test>
+
+            <div class="ui hidden divider"></div>
+
+            <div class="ui container">
+                <button class="ui right floated red button">Quitter le test</button>
+            </div>
+
+            <!--Enable button to be in the footer-->
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+
+        </div>
+    </div>
+</div>
+
+<!--<h2 class="center">Nom de la catégorie: {{testTitle}}</h2>-->
+<!--<app-card-test [student]="student" [question]="question" ></app-card-test>-->
+<!--<button class="ui right floated red button">Quitter le test</button>-->

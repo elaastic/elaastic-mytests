@@ -8,9 +8,9 @@ import {QUESTT1, STUD1} from '../mock-jeu-test';
 })
 export class PageCardRectoComponent implements OnInit {
 
-  @Input() numQuest: number;
-  @Input() nbQuestion: number;
-  @Input() testTitle: string;
+  numQuest = 1;
+  nbQuestion = 3;
+  testTitle = 'IHM partie 1';
 
   question = QUESTT1[2];
   student = STUD1;
