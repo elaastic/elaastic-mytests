@@ -1,5 +1,4 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-auto-evaluate',
@@ -17,6 +16,7 @@ export class AutoEvaluateComponent implements OnInit {
   }
 
   onClickEvaluate(note) {
+    // percente value of the progress bar
     this.changingValue = note * 20;
   }
 }
