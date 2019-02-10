@@ -24,7 +24,7 @@ export class PageModifTestComponent implements OnInit {
   }
 
   getTestId(): void {
-    this.id = +this.route.snapshot.paramMap.get('id');
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
   }
 
   getTest(): void {
