@@ -1,28 +1,34 @@
-<div class="ui accordion segment" style="padding-bottom: 0;">
-  <div class="ui title header active">
-    <strong>Question</strong>
+<div class="ui segment">
+  <div class="ui accordion segment" style="padding-bottom: 0;">
+    <div class="ui title header active">
+      <strong>Question</strong>
+
+    </div>
+
+    <div class="ui basic padded large text segment content active">
+      <p>{{question.title}}</p>
+    </div>
 
   </div>
 
-  <div class="ui basic padded large text segment content active">
-    <p>{{question.title}}</p>
+  <div class="ui accordion segment" style="padding-bottom: 0;">
+    <div class="ui title header active">
+      <strong>Réponse de @{{student.pseudo}} / Ta réponse</strong>
+
+    </div>
+
+    <div class="ui basic padded large text segment content active">
+      <p>{{reponsePersos}}</p>
+    </div>
+
   </div>
 
-</div>
-
-<div class="ui accordion segment" style="padding-bottom: 0;">
-  <div class="ui title header active">
-    <strong>Réponse de @{{student.pseudo}}</strong>
-
+  <div class="ui accordion segment" *ngIf="!listAnswer" >
+    Aucune réponse à cette question
   </div>
 
-  <div class="ui basic padded large text segment content active">
-    <p>{{reponsePersos}}</p>
+  <div *ngFor="let answer of listAnswer">
+    <app-line-answer [answer]="answer"></app-line-answer>
+    <br/>
   </div>
-
-</div>
-
-<div *ngFor="let answer of listAnswer">
-  <app-line-answer [answer]="answer"></app-line-answer>
-  <br/>
 </div>
