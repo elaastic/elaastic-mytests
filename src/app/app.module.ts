@@ -14,6 +14,7 @@ import { CardTestComponent } from './card-test/card-test.component';
 import { FooterComponent } from './footer/footer.component';
 import {PageHomeComponent} from './page-home/page-home.component';
 import { PageCreationTestComponent } from './page-creation-test/page-creation-test.component';
+import { PageModifTestComponent } from './page-modif-test/page-modif-test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PageCreationTestComponent } from './page-creation-test/page-creation-te
     CardTestComponent,
     PageHomeComponent,
     FooterComponent,
-    PageCreationTestComponent
+    PageCreationTestComponent,
+    PageModifTestComponent
   ],
   imports: [
     BrowserModule,
