@@ -11,6 +11,7 @@ import { LastTestComponent } from './last-test/last-test.component';
 import { LineAnswerComponent } from './line-answer/line-answer.component';
 import { CardResultComponent } from './card-result/card-result.component';
 import { CardTestComponent } from './card-test/card-test.component';
+import { PageCardRectoComponent } from './page-card-recto/page-card-recto.component';
 import { FooterComponent } from './footer/footer.component';
 import {PageHomeComponent} from './page-home/page-home.component';
 import { PageCreationTestComponent } from './page-creation-test/page-creation-test.component';
@@ -26,6 +27,7 @@ import { PageModifTestComponent } from './page-modif-test/page-modif-test.compon
     LineAnswerComponent,
     CardResultComponent,
     CardTestComponent,
+    PageCardRectoComponent,
     PageHomeComponent,
     FooterComponent,
     PageCreationTestComponent,

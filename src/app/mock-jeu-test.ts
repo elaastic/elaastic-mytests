@@ -33,7 +33,7 @@ export const QUESTT1: Question [] = [
     REPQ1T1),
   new Question('Quel est le nombre de couche du modele OSI et quel est leur nom ?',
     REPQ2T1),
-  new Question('Citer 2 application qui sont responsive ?',
+  new Question('Citer 2 applications qui sont responsive ?',
     REPQ3T1)
 ];
 
@@ -42,7 +42,7 @@ export const TEST1: Test = new Test(1, 'Programmation', QUESTT1 );
 
 // Comment fonctionne la mairie ?
 export const REPQ1T2: Answer [] = [
-  new Answer('Je c pas', 0, 'Inconue', 7)
+  new Answer('Je sais pas', 0, 'Inconue', 7)
 ];
 
 export const QUESTT2: Question [] = [
