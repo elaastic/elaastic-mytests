@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageHomeComponent} from './page-home/page-home.component';
 import { PageCreationTestComponent } from './page-creation-test/page-creation-test.component';
 import { PageModifTestComponent } from './page-modif-test/page-modif-test.component';
+import {PageResultComponent} from './page-result/page-result.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PageModifTestComponent } from './page-modif-test/page-modif-test.compon
     PageHomeComponent,
     FooterComponent,
     PageCreationTestComponent,
-    PageModifTestComponent
+    PageModifTestComponent,
+    PageResultComponent
   ],
   imports: [
     BrowserModule,
