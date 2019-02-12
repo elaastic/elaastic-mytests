@@ -2,7 +2,7 @@ import {Answer} from './answer';
 
 export class Question {
 
-  private _id: string;
+  private _id: number;
   private _title: string;
   private _anwsers: Answer[];
 
@@ -28,11 +28,11 @@ export class Question {
     this._anwsers = value;
   }
 
-  get id(): string {
+  get id(): number {
     return this._id;
   }
 
-  set id(value: string) {
+  set id(value: number) {
     this._id = value;
   }
 }
