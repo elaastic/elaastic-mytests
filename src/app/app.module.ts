@@ -8,6 +8,8 @@ import { AutoEvaluateComponent } from './auto-evaluate/auto-evaluate.component';
 import { ListTestComponent } from './list-test/list-test.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastTestComponent } from './last-test/last-test.component';
+import { ListQuestionComponent } from './list-question/list-question.component';
+import { QuestionChoiceComponent } from './question-choice/question-choice.component';
 import { LineAnswerComponent } from './line-answer/line-answer.component';
 import { CardResultComponent } from './card-result/card-result.component';
 import { CardTestComponent } from './card-test/card-test.component';
@@ -25,6 +27,8 @@ import {PageResultComponent} from './page-result/page-result.component';
     ListTestComponent,
     SidebarComponent,
     LastTestComponent,
+    ListQuestionComponent,
+    QuestionChoiceComponent
     LineAnswerComponent,
     CardResultComponent,
     CardTestComponent,

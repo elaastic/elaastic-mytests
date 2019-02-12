@@ -1,0 +1,23 @@
+<i class="angle icon" [class.down]="!test.id" [class.right]="test.id" (click)="test.id = !test.id; ifParentFalseSetTrue(this)"></i>
+<div class="content">
+  <div class="ui checkbox">
+    <input type="checkbox" name="questionCheckBox1" class="parent" [checked]="checkParent" (change)="switchParent()">
+    <label>{{test.title}}</label>
+  </div>
+
+  <div [suiCollapse]="test.id">
+    <div class="list">
+
+      <div class="item" *ngFor="let question of test.questions">
+        <i class="icon"></i>
+        <div class="content">
+          <div class="ui checkbox">
+            <input type="checkbox" name="{{question.id}}" (change)="checkParent = true" [checked]="checkChild">
+            <label>{{question.title}}</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

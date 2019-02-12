@@ -29,11 +29,11 @@ export const REPQ3T1: Answer [] = [
 ];
 
 export const QUESTT1: Question [] = [
-  new Question('Que veut dire JPA ?',
+  new Question(1, 'Que veut dire JPA ?',
     REPQ1T1),
-  new Question('Quel est le nombre de couche du modele OSI et quel est leur nom ?',
+  new Question(2, 'Quel est le nombre de couche du modele OSI et quel est leur nom ?',
     REPQ2T1),
-  new Question('Citer 2 applications qui sont responsive ?',
+  new Question(3, 'Citer 2 application qui sont responsive ?',
     REPQ3T1)
 ];
 
@@ -46,7 +46,7 @@ export const REPQ1T2: Answer [] = [
 ];
 
 export const QUESTT2: Question [] = [
-  new Question('Comment fonctionne la mairie ?',
+  new Question(4, 'Comment fonctionne la mairie ?',
     REPQ1T2)
 ];
 
