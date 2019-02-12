@@ -1,0 +1,56 @@
+<div style="margin-left: 90px;">
+  <div class="ui container">
+    <div class="ui hidden divider"></div>
+
+    <div class="ui container">
+
+      <div class="ui form" style="max-width: 800px; margin: auto;">
+        <h2 class="ui header">
+          <i class="list icon"></i>
+
+          <div class="content">
+            Modification du test
+          </div>
+        </h2>
+
+
+        <div class="ui segment">
+
+          <div class="required field">
+            <label>
+              Nom du test
+            </label>
+
+            <div class="required field">
+              <input class="ui input"
+                     type="text"
+                     id="testName"
+                     name="testName"
+                     value="{{test.title}}"
+                     placeholder="Nom du test">
+            </div>
+
+          </div>
+
+          <p>TODO : change, le choix des questions</p>
+
+          <div class="content">
+            Vous avez 5 questions selectionnées.
+          </div>
+
+          <div class="ui hidden divider"></div>
+
+          <button routerLink="/index" type="submit"
+                  class="ui primary button">
+            Sauvegarder &raquo;
+          </button>
+          <button (click)="goBack()" type="submit"
+                  class="ui danger button">
+            Annuler &raquo;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

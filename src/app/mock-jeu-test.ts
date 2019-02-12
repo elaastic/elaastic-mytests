@@ -5,27 +5,27 @@ import {Student} from './student';
 
 // Que veut dire JPA
 export const REPQ1T1: Answer [] = [
-  new Answer('Java persistence API', 5, 'Vincent')
+  new Answer('Java persistence API', 5, 'Vincent', 5)
 ];
 
 // Quel est le nombre de couhe du modele OSI ?
 export const REPQ2T1: Answer [] = [
   new Answer('7 couche, la couche application, reseau, liason, physique ',
     3.5,
-    'Flavien')
+    'Flavien', 6)
 ];
 
 // Citer 2 application qui sont responsive ?
 export const REPQ3T1: Answer [] = [
   new Answer('Google, amazon',
     4.5,
-    'Thommas'),
+    'Thommas', 3),
   new Answer('Angular.io, slack.com',
     4,
-    'Victor'),
+    'Victor', 4),
   new Answer('Un site non responsive, site mairie rodez',
     3,
-    'Iris')
+    'Iris', 2)
 ];
 
 export const QUESTT1: Question [] = [
@@ -42,7 +42,7 @@ export const TEST1: Test = new Test(1, 'Programmation', QUESTT1 );
 
 // Comment fonctionne la mairie ?
 export const REPQ1T2: Answer [] = [
-  new Answer('Je c pas', 0, 'Inconue')
+  new Answer('Je sais pas', 0, 'Inconue', 7)
 ];
 
 export const QUESTT2: Question [] = [
