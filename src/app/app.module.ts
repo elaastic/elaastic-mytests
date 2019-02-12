@@ -28,7 +28,7 @@ import {PageResultComponent} from './page-result/page-result.component';
     SidebarComponent,
     LastTestComponent,
     ListQuestionComponent,
-    QuestionChoiceComponent
+    QuestionChoiceComponent,
     LineAnswerComponent,
     CardResultComponent,
     CardTestComponent,
