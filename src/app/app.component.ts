@@ -13,8 +13,6 @@ import {PageModifTestComponent} from './page-modif-test/page-modif-test.componen
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('testAddComponent', {read: ViewContainerRef}) target: ViewContainerRef;
-
   constructor(private cfr: ComponentFactoryResolver) {
   }
 
@@ -22,33 +20,4 @@ export class AppComponent implements OnInit {
 
   }
 
-  chargerPageCardRectoComponent(nbQuestion: number, numQuestion: number, title: string) {
-
-    this.target.clear();
-    const compFactory = this.cfr.resolveComponentFactory(PageCardRectoComponent);
-    const component = this.target.createComponent(compFactory);
-    component.instance.nbQuestion = TEST1.questions.length;
-    component.instance.numQuest = 1;
-    component.instance.testTitle = TEST1.title;
-  }
-
-  chargerPageCreationTest() {
-
-    this.target.clear();
-    const compFactory = this.cfr.resolveComponentFactory(PageCreationTestComponent);
-    this.target.createComponent(compFactory);
-  }
-
-  chargerPageHome() {
-
-    this.target.clear();
-    const compFactory = this.cfr.resolveComponentFactory(PageHomeComponent);
-    this.target.createComponent(compFactory);
-  }
-
-  chargerPageModifTest() {
-    this.target.clear();
-    const compFactory = this.cfr.resolveComponentFactory(PageModifTestComponent);
-    this.target.createComponent(compFactory);
-  }
 }
