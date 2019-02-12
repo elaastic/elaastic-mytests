@@ -17,6 +17,6 @@ export class AutoEvaluateComponent implements OnInit {
 
   onClickEvaluate(note) {
     // percente value of the progress bar
-    this.changingValue = note * 20;
+    this.changingValue = note * 25;
   }
 }

@@ -1,8 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Answer} from '../answer';
-import {REPQ3T1} from '../mock-jeu-test';
-import {Question} from "../question";
-import {Student} from "../student";
+import {Question} from '../question';
+import {Student} from '../student';
 
 @Component({
   selector: 'app-card-result',

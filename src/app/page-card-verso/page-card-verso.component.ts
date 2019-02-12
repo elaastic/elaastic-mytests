@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {QUESTT1, STUD1} from "../mock-jeu-test";
+import {QUESTT1, REPQ1T1, REPQ3T1, STUD1} from "../mock-jeu-test";
 
 @Component({
   selector: 'app-page-card-verso',
@@ -14,6 +14,8 @@ export class PageCardVersoComponent implements OnInit {
   numQuest = 1;
   nbQuestion = 3;
   testTitle = 'IHM partie 1';
+
+  listAnswer = REPQ3T1;
 
   constructor() { }
 
