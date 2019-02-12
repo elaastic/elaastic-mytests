@@ -19,6 +19,7 @@ import { PageHomeComponent} from './page-home/page-home.component';
 import { PageCreationTestComponent } from './page-creation-test/page-creation-test.component';
 import { PageModifTestComponent } from './page-modif-test/page-modif-test.component';
 import {PageResultComponent} from './page-result/page-result.component';
+import {PageCardVersoComponent} from './page-card-verso/page-card-verso.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {PageResultComponent} from './page-result/page-result.component';
     CardResultComponent,
     CardTestComponent,
     PageCardRectoComponent,
+    PageCardVersoComponent,
     PageHomeComponent,
     FooterComponent,
     PageCreationTestComponent,

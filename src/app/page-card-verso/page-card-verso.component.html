@@ -1,0 +1,36 @@
+<div style="margin-left: 90px;">
+  <div class="ui container">
+    <div class="ui hidden divider"></div>
+
+    <div class="ui container">
+
+      <h1 class="ui header center">
+        Réponse n°{{numQuest}}/{{nbQuestion}}
+        <div class="sub header center">
+          Nom de la catégorie: {{testTitle}}
+        </div>
+      </h1>
+      <div class="ui hidden divider"></div>
+
+      <app-card-result [student]="student" [question]="question" ></app-card-result>
+
+      <div class="ui hidden divider"></div>
+
+      <app-auto-evaluate></app-auto-evaluate>
+
+      <div class="ui hidden divider"></div>
+
+      <div class="ui container">
+        <button routerLink="/resultat" class="ui right floated green button">Question suivante</button>
+        <button routerLink="/index" class="ui left floated red button">Quitter le test</button>
+      </div>
+
+      <!--Enable button to be in the footer-->
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+
+    </div>
+  </div>
+</div>
