@@ -11,10 +11,27 @@
 
       <div class="ui segment center">
         <!--Score view-->
-        TODO use app-choice-question-when finish
+        <div *ngFor="let test of listTest">
+
+          <div class="content">
+            <i class="angle icon" [class.down]="!test.id" [class.right]="test.id" (click)="test.id = !test.id; ifParentFalseSetTrue(this)"></i>
+            <label><strong>{{test.title}} {{moyenne}}/{{maxRating}}</strong></label>
+
+            <div [suiCollapse]="test.id">
+              <div class="list">
+
+                <div class="item" *ngFor="let question of test.questions">
+                  <div class="content">
+                    <label>{{question.title}} {{moyenne}}/{{maxRating}}</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
-
 
       <div class="ui hidden divider"></div>
 

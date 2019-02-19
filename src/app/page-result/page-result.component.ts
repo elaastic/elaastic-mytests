@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QUESTT1, STUD1} from '../mock-jeu-test';
+import {Test} from '../test';
 
 @Component({
   selector: 'app-page-result',
@@ -15,9 +16,14 @@ export class PageResultComponent implements OnInit {
   question = QUESTT1[2];
   student = STUD1;
 
+  listTest: Array<Test>;
+
   constructor() { }
 
   ngOnInit() {
+
+    this.listTest = STUD1.tests;
+
   }
 
 }
