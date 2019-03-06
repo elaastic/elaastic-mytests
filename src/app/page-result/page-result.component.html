@@ -14,7 +14,7 @@
         <div *ngFor="let test of listTest">
 
           <div class="content">
-            <i class="angle icon" [class.down]="!test.id" [class.right]="test.id" (click)="test.id = !test.id; ifParentFalseSetTrue(this)"></i>
+            <i class="angle icon" [class.down]="!test.id" [class.right]="test.id" (click)="test.id = !test.id;"></i>
             <label><strong>{{test.title}} {{moyenne}}/{{maxRating}}</strong></label>
 
             <div [suiCollapse]="test.id">

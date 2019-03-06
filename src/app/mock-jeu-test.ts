@@ -19,7 +19,7 @@ export const REPQ2T1: Answer [] = [
 export const REPQ3T1: Answer [] = [
   new Answer('Google, amazon',
     4.5,
-    'Thommas', 3),
+    'Thomas', 3),
   new Answer('Angular.io, slack.com',
     4,
     'Victor', 4),
@@ -54,6 +54,6 @@ export const TEST2: Test = new Test(2, 'Culture G', QUESTT2 );
 
 export const STUD1: Student = new Student(
   0,
-  'Gromnur',
+  'Pseudo',
   [TEST1, TEST2]
   );

@@ -17,7 +17,7 @@ export class PageCardVersoComponent implements OnInit {
 
   listAnswer = REPQ3T1;
 
-  reponsePersos = 'Ceci est un exemple de réponse: Google est une entreprise jeune et dynamique!';
+  reponsePersos = 'Ceci est un exemple de réponse: Google et Facebook';
 
   constructor() { }
 
